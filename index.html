@@ -8,17 +8,24 @@
     <title>Document</title>
 </head>
 <body>
-    <form id="formulario">
-        <input type="text" id="marca" placeholder="Marca">
-        <input type="text" id="nombre" placeholder="Nombre">
-        <input type="number" id="medida" placeholder="Medida">
-        <input type="number" id="tramos" placeholder="Tramos">
-        <input type="number" id="precio" placeholder="Precio">
-        <input type="number" id="stock" placeholder="Stock">
-        <button id="btn">Guardar</button>
-    </form>
+    <div>
+        <h2 class="titulo">INVENTARIO</h2>
+        <h3 class="titulo-2">AGREGAR UNA CAÑA</h3>
+    </div>
     
-    <div id="cañas"></div>
+    <div class="form">
+        <form id="formulario">
+            <input type="text" id="marca" placeholder="Marca">
+            <input type="text" id="nombre" placeholder="Nombre">
+            <input type="number" id="medida" placeholder="Medida">
+            <input type="number" id="tramos" placeholder="Tramos">
+            <input type="number" id="precio" placeholder="Precio">
+            <input type="number" id="stock" placeholder="Stock">
+            <button id="btn">Guardar</button>
+        </form>
+    </div>
+        
+    <div class="divCañas" id="cañas"></div>
     
     <script src="./main.js"></script>
 </body>

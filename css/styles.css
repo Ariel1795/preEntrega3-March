@@ -1,45 +1,39 @@
 @charset "UTF-8";
 body {
-  background-color: #3a53be;
-  width: 100%; }
-  body #jugador {
-    width: 100px;
-    height: 100px;
-    background-color: #aa3e00;
-    display: inline-block;
-    position: absolute;
-    transition: all 1s ease;
-    left: 0;
-    top: 150px; }
-  body #text.error {
-    border: 3px solid red; }
-  body #text.valid {
-    border: 3px solid green; }
-  body h1 {
+  background-color: #222;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  body .titulo {
+    font-size: 2rem;
+    margin-top: 5rem;
+    color: #50bdba;
     display: flex;
     justify-content: center; }
-  body .agregar-caña {
+  body .titulo-2 {
+    color: #50bdba;
+    text-align: center;
+    margin-top: 5rem; }
+  body .form {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    width: 100%; }
-    body .agregar-caña h2 {
-      text-align: center; }
-    body .agregar-caña form {
+    text-align: center; }
+    body .form input {
       display: flex;
+      text-align: center;
       flex-direction: column;
-      align-items: center; }
-      body .agregar-caña form input {
-        width: 50%;
-        margin-bottom: 1rem; }
-  body #divPadre {
-    border: 1px solid red;
-    margin: 1rem;
-    width: 50%; }
-    body #divPadre h3 {
-      border-bottom: 1px solid red; }
-    body #divPadre p {
-      border-bottom: 1px solid red; }
-    body #divPadre small {
-      border-bottom: 1px solid red;
-      width: 100%; }
+      margin-bottom: 1rem; }
+
+.divCañas {
+  width: 50%;
+  border: 1px solid #fdfdfd;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column; }
+  .divCañas h3 {
+    color: #50bdba;
+    border-bottom: 1px solid #fdfdfd; }
+  .divCañas p {
+    color: #aefeff;
+    border-bottom: 1px solid #fdfdfd; }

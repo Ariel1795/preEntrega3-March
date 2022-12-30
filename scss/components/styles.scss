@@ -1,62 +1,49 @@
+@import "../base/variables" ;
+
 body{
-//-----------jueguito page
 
-    #jugador{
-        width: 100px;
-        height: 100px;
-        background-color: rgb(170, 62, 0);
-        display: inline-block;
-        position: absolute;
-        transition: all 1s ease;
-        left: 0;
-        top: 150px;
-    }
-
-//------------End of jueguito page
-    #text.error{
-        border: 3px solid rgb(255, 0, 0);
-    }
-    #text.valid{
-        border: 3px solid green;
-    }
-    background-color: rgb(58, 83, 190);
+    background-color: #222;
     width: 100%;
-    h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .titulo{
+        font-size: 2rem;
+        margin-top: 5rem;
+        color: $color-tittles;
+        
         display:flex;
         justify-content: center;
     }
-    .agregar-caña{
-        h2{
-            text-align: center;
-        }
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-        form{
+    .titulo-2{
+        color: $color-tittles;
+        text-align: center;
+        margin-top: 5rem;
+    }
+        .form{
             display:flex;
-            flex-direction: column;
-            align-items: center;
+            justify-content: center;
+            text-align: center;
             input{
-                width: 50%;
+                display:flex;
+                text-align: center;
+            flex-direction: column;
                 margin-bottom: 1rem;
             }
         }
     }
-    #divPadre{
-        border: 1px solid red;
-        margin: 1rem;
+    .divCañas{
         width: 50%;
+        border: 1px solid $color-borders;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
         h3{
-            
-            border-bottom: 1px solid red;
+            color: #50bdba;
+            border-bottom: 1px solid $color-borders;
         }
         p{
-            border-bottom: 1px solid red;
-        }
-        small{
-            border-bottom: 1px solid red;
-            width: 100%;
+            color: $color-products;
+            border-bottom: 1px solid $color-borders;
         }
     }
-}
